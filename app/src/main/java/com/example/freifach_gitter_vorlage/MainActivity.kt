@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-//hello :)
+//hello :))))
         val imageButton1: ImageButton = findViewById(R.id.imageButton1)
         // Finde hier weitere ImageButtons
 
