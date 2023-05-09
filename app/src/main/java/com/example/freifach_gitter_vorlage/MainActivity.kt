@@ -1,5 +1,6 @@
 package com.example.freifach_gitter_vorlage
 
+import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -16,6 +17,21 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         imageButton1.setOnClickListener(this)
         // Füge hier weitere OnClickListener hinzu
+
+        val imageButton2: ImageButton = findViewById(R.id.imageButton2)
+        imageButton2.setOnClickListener(this)
+
+        val imageButton3: ImageButton = findViewById(R.id.imageButton3)
+        imageButton3.setOnClickListener(this)
+
+        val imageButton4: ImageButton = findViewById(R.id.imageButton4)
+        imageButton4.setOnClickListener(this)
+
+        val imageButton5: ImageButton = findViewById(R.id.imageButton5)
+        imageButton5.setOnClickListener(this)
+
+        val imageButton6: ImageButton = findViewById(R.id.imageButton6)
+        imageButton6.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
