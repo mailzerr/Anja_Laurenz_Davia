@@ -13,10 +13,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_main)
 
         val imageButton1: ImageButton = findViewById(R.id.imageButton1)
-        // Finde hier weitere ImageButtons
-
         imageButton1.setOnClickListener(this)
-        // Füge hier weitere OnClickListener hinzu
 
         val imageButton2: ImageButton = findViewById(R.id.imageButton2)
         imageButton2.setOnClickListener(this)
