@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
     private fun replaceImageWithDelay() {
     // Referenz zum ImageView, das ersetzt werden soll
-    val imageViewToReplace = findViewById<ImageView>(R.drawable.mit_maus)
+    val imageViewToReplace: ImageView = findViewById(R.drawable.mit_maus)
 
     // Referenz zum ImageView, das das ursprüngliche ImageView ersetzen soll
     val replacementImageView = findViewById<ImageView>(R.drawable.ohne_maus)
