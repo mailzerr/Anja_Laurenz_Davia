@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+//hello :)
         val imageButton1: ImageButton = findViewById(R.id.imageButton1)
         // Finde hier weitere ImageButtons
 
@@ -21,9 +21,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View) {
         when (v.id) {
             R.id.imageButton1 -> showToast("Button 1 geklickt")
-            // Füge hier weitere Fälle für die restlichen ImageButtons hinzu
+            R.id.imageButton2 -> showToast("Button 2 geklickt")
+            R.id.imageButton3 -> showToast("Button 3 geklickt")
+            R.id.imageButton4 -> showToast("Button 4 geklickt")
+            R.id.imageButton5 -> showToast("Button 5 geklickt")
+            R.id.imageButton6 -> showToast("Button 6 geklickt")
         }
     }
+
 
     private fun showToast(message: String) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
