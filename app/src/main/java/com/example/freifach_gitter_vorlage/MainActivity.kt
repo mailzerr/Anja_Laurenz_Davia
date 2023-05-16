@@ -1,11 +1,9 @@
 package com.example.freifach_gitter_vorlage
 
-import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageButton
-import android.widget.ImageView
 import android.widget.Toast
 import android.os.Handler
 import kotlin.random.Random
@@ -36,17 +34,17 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(v: View) {
         when (v.id) {
-            R.id.imageButton1 -> replaceImageWithDelay()
+            R.id.imageButton1 -> replaceImageWithDelay(R.id.imageButton1)
                 //showToast("Button 1 geklickt")
-            R.id.imageButton2 -> replaceImageWithDelay()
+            R.id.imageButton2 -> replaceImageWithDelay(R.id.imageButton2)
             //showToast("Button 2 geklickt")
-            R.id.imageButton3 -> replaceImageWithDelay()
+            R.id.imageButton3 -> replaceImageWithDelay(R.id.imageButton3)
             //showToast("Button 3 geklickt")
-            R.id.imageButton4 -> replaceImageWithDelay()
+            R.id.imageButton4 -> replaceImageWithDelay(R.id.imageButton4)
             //showToast("Button 4 geklickt")
-            R.id.imageButton5 -> replaceImageWithDelay()
+            R.id.imageButton5 -> replaceImageWithDelay(R.id.imageButton5)
             //showToast("Button 5 geklickt")
-            R.id.imageButton6 -> replaceImageWithDelay()
+            R.id.imageButton6 -> replaceImageWithDelay(R.id.imageButton6)
             //showToast("Button 6 geklickt")
         }
     }
@@ -55,12 +53,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     private fun showToast(message: String) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
-    private fun replaceImageWithDelay() {
+    private fun replaceImageWithDelay(img: Int) {
     // Referenz zum ImageView, das ersetzt werden soll
-    val imageViewToReplace: ImageView = findViewById(R.drawable.mit_maus)
+    val imageViewToReplace: ImageButton = findViewById(R.drawable.ohne_maus)
 
     // Referenz zum ImageView, das das ursprüngliche ImageView ersetzen soll
-    val replacementImageView = findViewById<ImageView>(R.drawable.ohne_maus)
+    val replacementImageView = findViewById<ImageButton>(R.drawable.mit_maus)
 
     // Handler erstellen
     val handler = Handler()
