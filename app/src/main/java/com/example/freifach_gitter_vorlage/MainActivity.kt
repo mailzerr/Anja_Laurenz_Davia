@@ -33,21 +33,36 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     override fun onClick(v: View) {
+        var score = 1
         when (v.id) {
-            R.id.imageButton1 -> replaceImageWithDelay(R.id.imageButton1)
+            R.id.imageButton1 -> {replaceImageWithDelay(R.id.imageButton1)
+                score = score + 1 }
             //showToast("Button 1 geklickt")
-            R.id.imageButton2 -> replaceImageWithDelay(R.id.imageButton2)
+            R.id.imageButton2 -> {replaceImageWithDelay(R.id.imageButton2)
+                score = score + 1}
             //showToast("Button 2 geklickt")
-            R.id.imageButton3 -> replaceImageWithDelay(R.id.imageButton3)
+            R.id.imageButton3 -> {replaceImageWithDelay(R.id.imageButton3)
+                score = score + 1}
             //showToast("Button 3 geklickt")
-            R.id.imageButton4 -> replaceImageWithDelay(R.id.imageButton4)
+            R.id.imageButton4 -> {replaceImageWithDelay(R.id.imageButton4)
+                score = score + 1}
             //showToast("Button 4 geklickt")
-            R.id.imageButton5 -> replaceImageWithDelay(R.id.imageButton5)
+            R.id.imageButton5 -> {replaceImageWithDelay(R.id.imageButton5)
+                score = score + 1}
             //showToast("Button 5 geklickt")
-            R.id.imageButton6 -> replaceImageWithDelay(R.id.imageButton6)
+            R.id.imageButton6 -> {replaceImageWithDelay(R.id.imageButton6)
+                score = score + 1}
             //showToast("Button 6 geklickt")
         }
     }
+
+
+
+
+
+
+
+
 
     private fun showToast(message: String) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
