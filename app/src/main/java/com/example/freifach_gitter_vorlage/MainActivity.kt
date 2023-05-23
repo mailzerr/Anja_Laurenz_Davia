@@ -33,6 +33,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
     override fun onClick(v: View) {
         var score = 1
+        var max = 100
         when (v.id) {
             R.id.imageButton1 -> {replaceImageWithDelay(R.id.imageButton1)
                 score = score + 1 }
@@ -52,6 +53,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.imageButton6 -> {replaceImageWithDelay(R.id.imageButton6)
                 score = score + 1}
             //showToast("Button 6 geklickt")
+        }
+        if (score = max){
+            showToast("Score 100 erreicht")
         }
     }
     private fun showToast(message: String) {
