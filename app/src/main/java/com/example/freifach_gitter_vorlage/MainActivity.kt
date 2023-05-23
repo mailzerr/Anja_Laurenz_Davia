@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 score = score + 1}
             //showToast("Button 6 geklickt")
         }
-        if (score = max){
+        if (score == max){
             showToast("Score 100 erreicht")
         }
     }
