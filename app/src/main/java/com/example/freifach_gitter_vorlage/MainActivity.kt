@@ -64,11 +64,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     private fun replaceImageWithDelay(resID: Int) {
         // Referenz zum ImageView, das ersetzt werden soll
         val imageViewToReplace: ImageButton = findViewById(resID)
-        imageViewToReplace.setImageResource(R.drawable.ohne_maus)
+        imageViewToReplace.setImageResource(R.drawable.mit_maus)
 
         // Referenz zum ImageView, das das ursprüngliche ImageView ersetzen soll
         val replacementImageView: ImageButton = findViewById(resID)
-        replacementImageView.setImageResource(R.drawable.mit_maus)
+        replacementImageView.setImageResource(R.drawable.ohne_maus)
 
         // Handler erstellen
         val handler = Handler()
@@ -83,14 +83,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 // Verzögerten Task ausführen
         handler.postDelayed({
             // Hier wird das Bild des zu ersetzenden ImageView geändert
-            imageViewToReplace.setImageResource(R.drawable.ohne_maus)
+            imageViewToReplace.setImageResource(R.drawable.mit_maus)
 
             // Zufällige Verzögerungszeit generieren
             val randomDelay2 = Random.nextInt(minDelay, maxDelay).toLong()
 
             // Handler erneut ausführen, um das Bild wieder zu ändern
             handler.postDelayed({
-                imageViewToReplace.setImageResource(R.drawable.mit_maus)
+                imageViewToReplace.setImageResource(R.drawable.ohne_maus)
             }, randomDelay2) // Hier wird die zufällige Verzögerungszeit verwendet
         }, randomDelay) }// Hier wird die zufällige Verzögerungszeit verwendet
 }
