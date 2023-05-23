@@ -31,7 +31,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         val imageButton6: ImageButton = findViewById(R.id.imageButton6)
         imageButton6.setOnClickListener(this)
     }
-
     override fun onClick(v: View) {
         var score = 1
         when (v.id) {
@@ -55,15 +54,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             //showToast("Button 6 geklickt")
         }
     }
-
-
-
-
-
-
-
-
-
     private fun showToast(message: String) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
@@ -99,6 +89,4 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 imageViewToReplace.setImageResource(R.drawable.mit_maus)
             }, randomDelay2) // Hier wird die zufällige Verzögerungszeit verwendet
         }, randomDelay) }// Hier wird die zufällige Verzögerungszeit verwendet
-
-
 }
