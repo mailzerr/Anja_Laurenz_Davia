@@ -9,6 +9,8 @@ import androidx.appcompat.app.AppCompatActivity
 import kotlin.random.Random
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
+    private var score = 0
+    private val max = 100
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -32,8 +34,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         imageButton6.setOnClickListener(this)
     }
     override fun onClick(v: View) {
-        var score = 0
-        val max = 100
         when (v.id) {
             R.id.imageButton1 ->
             {
