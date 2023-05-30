@@ -22,7 +22,7 @@
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:src="@drawable/ohne_maus" />
+            android:src="@drawable/mit_maus" />
 
         <ImageButton
             android:id="@+id/imageButton2"
@@ -30,7 +30,7 @@
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:src="@drawable/ohne_maus" />
+            android:src="@drawable/mit_maus" />
 
         <ImageButton
             android:id="@+id/imageButton3"
@@ -38,7 +38,7 @@
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:src="@drawable/ohne_maus" />
+            android:src="@drawable/mit_maus" />
 
         <ImageButton
             android:id="@+id/imageButton4"
@@ -54,7 +54,7 @@
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:src="@drawable/ohne_maus" />
+            android:src="@drawable/mit_maus" />
 
         <ImageButton
             android:id="@+id/imageButton6"
@@ -62,7 +62,7 @@
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:src="@drawable/ohne_maus" />
+            android:src="@drawable/mit_maus" />
 
 
 
