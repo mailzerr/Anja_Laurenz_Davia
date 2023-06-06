@@ -31,25 +31,33 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         val imageButton6: ImageButton = findViewById(R.id.imageButton6)
         imageButton6.setOnClickListener(this)
     }
-
     override fun onClick(v: View) {
+        var score = 1
+        var max = 100
         when (v.id) {
-            R.id.imageButton1 -> replaceImageWithDelay(R.id.imageButton1)
+            R.id.imageButton1 -> {replaceImageWithDelay(R.id.imageButton1)
+                score = score + 1 }
             //showToast("Button 1 geklickt")
-            R.id.imageButton2 -> replaceImageWithDelay(R.id.imageButton2)
+            R.id.imageButton2 -> {replaceImageWithDelay(R.id.imageButton2)
+                score = score + 1}
             //showToast("Button 2 geklickt")
-            R.id.imageButton3 -> replaceImageWithDelay(R.id.imageButton3)
+            R.id.imageButton3 -> {replaceImageWithDelay(R.id.imageButton3)
+                score = score + 1}
             //showToast("Button 3 geklickt")
-            R.id.imageButton4 -> replaceImageWithDelay(R.id.imageButton4)
+            R.id.imageButton4 -> {replaceImageWithDelay(R.id.imageButton4)
+                score = score + 1}
             //showToast("Button 4 geklickt")
-            R.id.imageButton5 -> replaceImageWithDelay(R.id.imageButton5)
+            R.id.imageButton5 -> {replaceImageWithDelay(R.id.imageButton5)
+                score = score + 1}
             //showToast("Button 5 geklickt")
-            R.id.imageButton6 -> replaceImageWithDelay(R.id.imageButton6)
+            R.id.imageButton6 -> {replaceImageWithDelay(R.id.imageButton6)
+                score = score + 1}
             //showToast("Button 6 geklickt")
         }
-
+        if (score == max){
+            showToast("Score 100 erreicht")
+        }
     }
-
     private fun showToast(message: String) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
@@ -66,7 +74,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         val handler = Handler()
 
         // Minimale und maximale Verzögerungszeit in Millisekunden
-        val minDelay = 900
+        val minDelay = 500
         val maxDelay = 1500
 
         // Zufällige Verzögerungszeit generieren
@@ -85,6 +93,4 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 imageViewToReplace.setImageResource(R.drawable.ohne_maus)
             }, randomDelay2) // Hier wird die zufällige Verzögerungszeit verwendet
         }, randomDelay) }// Hier wird die zufällige Verzögerungszeit verwendet
-
-
 }
