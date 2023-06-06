@@ -12,12 +12,16 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/teal_200"
+            android:layout_height="42dp"
+            android:background="@color/purple_200"
+            android:fontFamily="@font/akaya_telivigala"
+            android:lineSpacingExtra="8sp"
             android:text="@string/score"
-            android:textColor="#BC0C0C"
+            android:textAlignment="center"
+            android:textColor="#FDFDFD"
             android:textSize="24sp" />
-    <GridLayout
+
+        <GridLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
