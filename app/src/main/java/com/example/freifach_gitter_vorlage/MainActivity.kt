@@ -31,37 +31,32 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         val imageButton6: ImageButton = findViewById(R.id.imageButton6)
         imageButton6.setOnClickListener(this)
     }
-    var score = 1
-    var max = 10
     override fun onClick(v: View) {
+        var score = 1
+        var max = 100
         when (v.id) {
             R.id.imageButton1 -> {replaceImageWithDelay(R.id.imageButton1)
-                score += 1
-            }
+                score = score + 1 }
             //showToast("Button 1 geklickt")
             R.id.imageButton2 -> {replaceImageWithDelay(R.id.imageButton2)
-                score += 1
-            }
+                score = score + 1}
             //showToast("Button 2 geklickt")
             R.id.imageButton3 -> {replaceImageWithDelay(R.id.imageButton3)
                 score += 1
             }
             //showToast("Button 3 geklickt")
             R.id.imageButton4 -> {replaceImageWithDelay(R.id.imageButton4)
-                score += 1
-            }
+                score = score + 1}
             //showToast("Button 4 geklickt")
             R.id.imageButton5 -> {replaceImageWithDelay(R.id.imageButton5)
-                score += 1
-            }
+                score = score + 1}
             //showToast("Button 5 geklickt")
             R.id.imageButton6 -> {replaceImageWithDelay(R.id.imageButton6)
-                score += 1
-            }
+                score = score + 1}
             //showToast("Button 6 geklickt")
         }
         if (score == max){
-            showToast("Score 10 erreicht")
+            showToast("Score 100 erreicht")
         }
     }
     private fun showToast(message: String) {
