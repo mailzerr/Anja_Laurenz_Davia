@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Freifach_Gitter_Vorlage</string>
+    <string name="app_name">Whac A Mouse</string>
+    <string name="score">   You have </string>
 </resources>
